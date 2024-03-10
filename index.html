@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <header>
+      <h1 id="title">Survey Form</h1>
+    <p id="description">Please leave your feedback on your experience with us below.</p>
+    </header>
+
+    <main>
+       <form id="survey-form">
+
+      <fieldset>
+
+        <label id="name-label" for="name">Name: 
+          <input type="text" 
+          id="name" 
+          name="name" 
+          placeholder="Enter Your full name"
+          class="input-control" 
+          required/></label>
+
+        <label id="email-label" for="email">Email: 
+          <input 
+          type="email" 
+          id="email" 
+          name="email"
+          placeholder="Enter your email" 
+          class="input-control"
+          required/></label>
+        
+        <label id="number-label" for="age">Your age(years): 
+          <input type="number" 
+          id="number" 
+          name="age"
+          min="16"
+          max="90"
+          class="input-control"
+          placeholder="age"/>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label id="practice" for="practice">How often do you practice code?
+          <select id="dropdown" name="practice" class="input-control">
+            <option value="" disabled selected>(select one)</option>
+            <option value="rarely">Rarely</option>
+            <option value="often">Often</option>
+            <option value="all-the-time">All the time</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Do you have any free time?</legend>
+
+        <label for="yes"><input type="radio" id="yes" name="freeTime" class="in line" value="yes">&nbspYes</label>
+
+        <label for="no"><input type="radio" id="no" name="freeTime" class="inline" value="no">&nbspNo</label>
+
+        <label for="rather-not-say"><input type="radio" id="rather-not-say" name="freeTime" class="inline" value="rather-not-say">&nbspRather not say</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What have you done to further develope your coding skills?</legend>
+          
+          <label for="youtube"><input type="checkbox" id="youtube" name="youtubeVideos" value="youtube-videos"/>&nbspWatched youtube videos</label>
+
+          
+          <label for="freecodecamp"><input type="checkbox" id="freecodecamp" name="freecodecampcourse" value="freecodecamp-course"/>&nbspSigned up for the free code camp course</label>
+
+          
+          <label for="others"><input type="checkbox" id="others" name="others" value="others"/>&nbspOthers</label>
+      </fieldset>    
+
+      <fieldset>
+        <label for="prospects">Let us know of your future prospects in line with coding
+          <textarea id="prospects" name="prospects" rows="5" cols="30" class="input-textarea"></textarea></label>
+      </fieldset>
+
+      <input id="submit" type="submit" value="submit">
+    </form>
+    </main>
+    
+  </body>
+
+</html>
